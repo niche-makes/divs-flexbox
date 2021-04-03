@@ -99,6 +99,9 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  width: 100%;
+  background: url(../img/light-room.jpg);
+  object-fit: cover;
 }
 
 body {
@@ -106,33 +109,66 @@ body {
   padding: 2em;
   font-size: 1em;
   height: 100%;
-  background-color: rgb(247, 201, 201);
+  /* background-color: rgb(247, 201, 201); */
+  
+}
+
+header, footer {
+    /* background-color: lightgoldenrodyellow; */
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: column center;
+    align-items: flex-start;
+    padding: 4% 4% 0 4%;
+    background-color:rgba(77, 57, 31, 0.336)
+}
+
+header, footer {
+    display: flex;
+    justify-content: column center;
+    align-items: center;
+    padding-left: 4%;
+}
+
+h1 {
+    color: rgb(255, 240, 208);
+}
+p {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: rgb(255, 240, 208);
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: rgb(54, 54, 54);
+.flex-items {
+  color: rgb(255, 240, 208);
   line-height: 1.5em;
   font-size: 1.3em;
   height: 300px;
   display: flex;
-  width: 30%;
+  width: 24%;
+  padding: 4%;
   justify-content:center;
   align-items: center;
-  padding: 3%;
   text-align: center;
 }
 
-.div-2 {
-    border-left: solid white 1px;
-    border-right: solid white 1px;
+#div-2 {
+    border-left: solid rgb(54, 54, 54) 1px;
+    border-right: solid rgb(54, 54, 54) 1px;
 }
 
 
